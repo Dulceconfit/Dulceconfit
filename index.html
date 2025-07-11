@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postres Saludables Sin Horno - Dulceconfit</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#18375d',
+                        secondary: '#5788c4',
+                        accent: '#84c1fa',
+                        light: '#fdf9f9',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .countdown {
+            font-family: 'Inter', sans-serif;
+            font-weight: 800;
+        }
+
+        /* Star rating styling */
+        .star-rating {
+            display: flex;
+            color: #FFD700; /* Gold color for stars */
+            margin-bottom: 0.5rem;
+        }
+        .star-rating svg {
+            width: 1.25rem; /* Equivalent to w-5 */
+            height: 1.25rem; /* Equivalent to h-5 */
+            fill: currentColor;
+        }
+    </style>
+</head>
+<body class="bg-light text-primary">
+    <!-- Hero Section with Countdown Timer -->
+    <section class="bg-primary text-white py-12 md:py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-primary/90 to-primary opacity-90"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <div class="bg-accent text-primary font-bold py-1 px-4 rounded-full inline-block mb-4 text-sm md:text-base">
+                ¡OFERTA POR TIEMPO LIMITADO!
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 max-w-4xl mx-auto">
+                <span class="text-accent">¿Antojos Dulces Sin Culpa?</span><br>
+                ¡Descubre el Secreto!
+            </h1>
+
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                Descubre cómo satisfacer tus antojos dulces con recetas <span class="font-bold underline">fáciles, rápidas y 100% saludables</span> que no requieren horno ni ingredientes complicados.
+            </p>
+
+
+            <div class="floating mb-8">
+                <img src="https://d1yei2z3i6k35z.cloudfront.net/13287534/6861b3ec4606d_Mokcupsproductos.png"
+                     alt="Postres Saludables Sin Horno"
+                     class="mx-auto rounded-xl shadow-2xl border-4 border-white max-w-full md:max-w-2xl">
+            </div>
+
+            <a href="https://pay.hotmart.com/A100518285S"
+               class="bg-accent hover:bg-secondary text-white font-bold py-4 px-8 rounded-full text-xl md:text-2xl shadow-lg transition-all duration-300 transform hover:scale-105 inline-block pulse-animation">
+                ¡QUIERO MIS POSTRES SALUDABLES AHORA!
+            </a>
+
+            <!-- Updated Payment Methods Image and Text from image_9f9eb9.png -->
+            <div class="mt-6 flex flex-col items-center justify-center">
+                <img src="https://d1yei2z3i6k35z.cloudfront.net/13287534/6861fe451744a_mediosdepagopeque%C3%B1o.png"
+                     alt="Métodos de pago aceptados"
+                     class="h-12 md:h-16 mb-2">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section with Emotional Triggers -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-12">
+                ¿Te Identificas con Alguno de Estos Problemas?
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-light rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-accent/20 text-accent rounded-full p-3 mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold">Culpa por Comer Dulces</h3>
+                    </div>
+                    <p class="text-lg text-gray-700">
+                        Sientes remordimiento cada vez que comes algo dulce porque sabes que no es saludable para ti.
+                    </p>
+                </div>
+
+                <div class="bg-light rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-accent/20 text-accent rounded-full p-3 mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold">Falta de Tiempo</h3>
+                    </div>
+                    <p class="text-lg text-gray-700">
+                        No tienes tiempo para preparar postres complicados o esperar que se horneen.
+                    </p>
+                </div>
+
+                <div class="bg-light rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-accent/20 text-accent rounded-full p-3 mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold">Ingredientes Complicados</h3>
+                    </div>
+                    <p class="text-lg text-gray-700">
+                        Las recetas saludables que encuentras requieren ingredientes difíciles de conseguir o muy caros.
+                    </p>
+                </div>
+
+                <div class="bg-light rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-accent/20 text-accent rounded-full p-3 mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold">Resultados Decepcionantes</h3>
+                    </div>
+                    <p class="text-lg text-gray-700">
+                        Has intentado hacer postres saludables antes pero no sabían bien o tenían mala textura.
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-xl md:text-2xl font-medium mb-6">
+                    Si respondiste <span class="font-bold text-accent">"SÍ"</span> a alguno de estos problemas...
+                </p>
+                <p class="text-2xl md:text-3xl font-bold text-primary">
+                    ¡Sigue leyendo porque tenemos la solución perfecta para ti!
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- New Section: About Julianne -->
+    <section class="py-16 md:py-24 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto shadow-lg border border-gray-100 flex flex-col md:flex-row items-center md:items-start gap-8">
+                <div class="md:w-1/3 flex justify-center">
+                    <img src="https://d1yei2z3i6k35z.cloudfront.net/13287534/686b467f3bd76_Julianne.jpg"
+                         alt="Julianne"
+                         class="w-48 h-50 rounded-full object-cover shadow-md border-4 border-accent">
+                </div>
+                <div class="md:w-2/3 text-center md:text-left">
+                    <h3 class="text-3xl md:text-4xl font-bold text-primary mb-4">¡Hola, soy Julianne!</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Amo lo dulce, pero también quería cuidarme sin renunciar a lo que me hace feliz, sé lo difícil que es encontrar postres saludables que de verdad sean deliciosos. Por eso creé este ebook, para ayudarte a disfrutar lo dulce, sin culpa, y lo hice sin horno, para que tengas otras formas de poderlas realizar, que sean fáciles, rápidas, deliciosas y así compartir contigo las recetas que sí funcionan y te hacen sentir bien.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section with Transformation -->
+    <section class="py-16 md:py-24 bg-gradient-to-b from-white to-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">
+                    Imagina Esto...
+                </h2>
+                <p class="text-xl md:text-2xl max-w-3xl mx-auto">
+                    Disfrutar de postres deliciosos <span class="font-bold text-accent">sin culpa</span>, preparados en minutos <span class="font-bold text-accent">sin horno</span>, con ingredientes <span class="font-bold text-accent">fáciles de conseguir</span>.
+                </p>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-12 max-w-6xl mx-auto">
+                <div class="md:w-1/2">
+                    <img src="https://d1yei2z3i6k35z.cloudfront.net/13287534/6861b3ec4606d_Mokcupsproductos.png"
+                         alt="Postres Saludables Sin Horno"
+                         class="mx-auto rounded-xl shadow-2xl w-full max-w-md mx-auto">
+                </div>
+
+                <div class="md:w-1/2">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-6 text-primary">
+                            Con <span class="text-accent">Postres Saludables Sin Horno</span> podrás:
+                        </h3>
+
+                        <ul class="space-y-4 text-lg">
+                            <li class="flex items-start">
+                                <div class="bg-accent/20 text-accent rounded-full p-1 mr-3 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span>Saciar tus antojos dulces <span class="font-semibold">sin remordimientos</span></span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-accent/20 text-accent rounded-full p-1 mr-3 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span>Preparar postres <span class="font-semibold">sin necesidad de horno</span> </span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-accent/20 text-accent rounded-full p-1 mr-3 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span>Usar ingredientes <span class="font-semibold">simples y accesibles</span> que ya tienes en casa</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-accent/20 text-accent rounded-full p-1 mr-3 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span><span class="font-semibold">Sorprender a tu familia</span> con postres que parecen de pastelería profesional</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-accent/20 text-accent rounded-full p-1 mr-3 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span><span class="font-semibold">Mejorar tu salud</span> mientras disfrutas de lo dulce todos los días</span>
+                            </li>
+                        </ul>
+
+                        <div class="mt-8 text-center">
+                            <a href="https://pay.hotmart.com/A100518285S"
+                               class="bg-accent hover:bg-secondary text-white font-bold py-4 px-8 rounded-full text-lg md:text-xl shadow-lg transition-all duration-300 transform hover:scale-105 inline-block">
+                                QUIERO TRANSFORMAR MIS POSTRES AHORA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section with Icons -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-6">
+                ¿Qué Obtendrás con Este Ebook?
+            </h2>
+            <p class="text-xl md:text-2xl text-center mb-12 max-w-3xl mx-auto">
+                Todo lo que necesitas para disfrutar de postres saludables sin complicaciones
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Benefit 1 -->
+                <div class="bg-light rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="bg-accent/20 text-accent rounded-full p-4 w-16 h-16 flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-4">20 Recetas Comprobadas</h3>
+                    <p class="text-gray-700">
+                        Deliciosas recetas sin horno organizadas por categorías: mousses, trufas, tartas frías, postres helados y más.
+                    </p>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="bg-light rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="bg-accent/20 text-accent rounded-full p-4 w-16 h-16 flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-4">Preparación Rápida</h3>
+                    <p class="text-gray-700">
+                        Encontrarás recetas perfectas para cuando tengas antojos urgentes.
+                    </p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="bg-light rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="bg-accent/20 text-accent rounded-full p-4 w-16 h-16 flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-4">Ingredientes Accesibles</h3>
+                    <p class="text-gray-700">
+                        No necesitas ingredientes especiales o difíciles de encontrar. Usamos lo que ya tienes en tu cocina.
+                    </p>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="bg-light rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="bg-accent/20 text-accent rounded-full p-4 w-16 h-16 flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-4">Guía de Sustituciones</h3>
+                    <p class="text-gray-700">
+                        Aprende a sustituir ingredientes no saludables por opciones nutritivas sin sacrificar el sabor.
+                    </p>
+                </div>
+
+                <!-- Benefit 5 -->
+                <div class="bg-light rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="bg-accent/20 text-accent rounded-full p-4 w-16 h-16 flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 019-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-4">Acceso Inmediato</h3>
+                    <p class="text-gray-700">
+                        Descarga instantánea en formato PDF del ebook una vez lo compres. Y acceso a un grupo privado en Facebook para compartir tus resultados, dudas, seguir inspirándote y sentirte acompañada/o en todo tu proceso.
+                    </p>
+                </div>
+
+                <!-- Benefit 6 -->
+                <div class="bg-light rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="bg-accent/20 text-accent rounded-full p-4 w-16 h-16 flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-4">Bonos Exclusivos</h3>
+                    <p class="text-gray-700">
+                        Recibe 3 regalos especiales que complementarán tu experiencia y te ayudarán a obtener mejores resultados.
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="https://pay.hotmart.com/A100518285S"
+                   class="bg-accent hover:bg-secondary text-white font-bold py-4 px-8 rounded-full text-lg md:text-xl shadow-lg transition-all duration-300 transform hover:scale-105 inline-block">
+                    QUIERO ACCEDER A TODOS ESTOS BENEFICIOS
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonuses Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-b from-light to-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">
+                    ¡Y Como Regalo Especial Recibirás Estos 3 Bonos!
+                </h2>
+                <p class="text-xl md:text-2xl max-w-3xl mx-auto">
+                    Solo por comprar hoy, obtendrás estos increíbles bonos que potenciarán tus resultados.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Bono 1 -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 transform hover:scale-105 transition-all duration-300">
+                    <div class="bg-secondary p-6 text-center">
+                        <h3 class="text-xl md:text-2xl font-bold text-white">BONO #1</h3>
+                    </div>
+                    <div class="p-6">
+                        <img src="https://d1yei2z3i6k35z.cloudfront.net/13287534/6861ecca11772_Bono1.png"
+                             alt="Bono 1"
+                             class="w-full h-48 object-contain mb-6">
+                        <h4 class="text-xl font-bold mb-3">Checklist de Preparación + Tips de Presentación</h4>
+                        <p class="text-gray-700 mb-6">
+                            Todo lo que necesitas tener listo para que tus postres salgan perfectos y se vean como de revista.
+                        </p>
+                        <div class="bg-accent/10 text-accent font-bold py-2 px-4 rounded-lg inline-block">
+                            <span class="line-through">Valor: $5 USD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bono 2 -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 transform hover:scale-105 transition-all duration-300">
+                    <div class="bg-secondary p-6 text-center">
+                        <h3 class="text-xl md:text-2xl font-bold text-white">BONO #2</h3>
+                    </div>
+                    <div class="p-6">
+                        <img src="https://d1yei2z3i6k35z.cloudfront.net/13287534/6861ebdf7e111_bno2TC.png"
+                             alt="Bono 2"
+                             class="w-full h-48 object-contain mb-6">
+                        <h4 class="text-xl font-bold mb-3">Guía de Toppings Saludables</h4>
+                        <p class="text-gray-700 mb-6">
+                            Desata tu creatividad con ideas irresistibles para personalizar cada receta con combinaciones únicas.
+                        </p>
+                        <div class="bg-accent/10 text-accent font-bold py-2 px-4 rounded-lg inline-block">
+                            <span class="line-through">Valor: $4 USD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bono 3 -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 transform hover:scale-105 transition-all duration-300">
+                    <div class="bg-secondary p-6 text-center">
+                        <h3 class="text-xl md:text-2xl font-bold text-white">BONO #3</h3>
+                    </div>
+                    <div class="p-6">
+                        <img src="https://d1yei2z3i6k35z.cloudfront.net/13287534/6861ed5d28650_Bono3.png"
+                             alt="Bono 3"
+                             class="w-full h-48 object-contain mb-6">
+                        <h4 class="text-xl font-bold mb-3">Menú Semanal con las Recetas del Ebook</h4>
+                        <p class="text-gray-700 mb-6">
+                            Organiza tu semana y disfruta de tus postres favoritos sin repetir ni complicarte.
+                        </p>
+                        <div class="bg-accent/10 text-accent font-bold py-2 px-4 rounded-lg inline-block">
+                            <span class="line-through">Valor: $5 USD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-xl md:text-2xl font-medium mb-6">
+                    Estos bonos son tuyos <span class="font-bold text-accent">GRATIS</span> solo si compras hoy.
+                </p>
+                <a href="https://pay.hotmart.com/A100518285S"
+                   class="bg-accent hover:bg-secondary text-white font-bold py-4 px-8 rounded-full text-lg md:text-xl shadow-lg transition-all duration-300 transform hover:scale-105 inline-block">
+                    QUIERO MI EBOOK Y LOS BONOS GRATIS
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Comparison Section -->
+    <section class="py-16 md:py-24 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">
+                    ¿Cuánto Vale Realmente Todo Esto?
+                </h2>
+                <p class="text-xl md:text-2xl max-w-3xl mx-auto">
+                    Veamos el valor real de todo lo que recibirás con esta compra.
+                </p>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl md:text-3xl font-bold mb-6">Lo que normalmente pagarías:</h3>
+
+                        <ul class="space-y-4 text-lg">
+                            <li class="flex justify-between border-b border-white/20 pb-2">
+                                <span>Ebook con 20 recetas</span>
+                                <span class="font-bold">$12 USD</span>
+                            </li>
+                            <li class="flex justify-between border-b border-white/20 pb-2">
+                                <span>Recetas por módulos</span>
+                                <span class="font-bold">$6 USD</span>
+                            </li>
+                            <li class="flex justify-between border-b border-white/20 pb-2">
+                                <span>Bono 1: Checklist</span>
+                                <span class="font-bold">$5 USD</span>
+                            </li>
+                            <li class="flex justify-between border-b border-white/20 pb-2">
+                                <span>Bono 2: Toppings</span>
+                                <span class="font-bold">$4 USD</span>
+                            </li>
+                            <li class="flex justify-between border-b border-white/20 pb-2">
+                                <span>Bono 3: Menú semanal</span>
+                                <span class="font-bold">$5 USD</span>
+                            </li>
+                            <li class="flex justify-between pt-4 text-xl font-bold">
+                                <span>TOTAL:</span>
+                                <span class="line-through">$32 USD</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-accent/20 rounded-xl p-6 flex flex-col justify-center items-center text-center border-2 border-accent">
+                        <div class="mb-6">
+                            <p class="text-lg mb-2">Pero hoy lo recibes por solo:</p>
+                            <p class="text-4xl md:text-5xl font-bold">$7 USD</p>
+                            <p class="text-lg mt-2">¡Un descuento del 78%!</p>
+                        </div>
+
+                        <a href="https://pay.hotmart.com/A100518285S"
+                           class="bg-accent hover:bg-secondary text-white font-bold py-4 px-8 rounded-full text-lg md:text-sm shadow-lg transition-all duration-300 transform hover:scale-105 inline-block">
+                            SÍ, QUIERO MIS POSTRES SALUDABLES POR $7 USD
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-6">
+                Ellos ya están trasformando sus vidas…
+            </h2>
+            <p class="text-xl md:text-2xl text-center mb-12 max-w-3xl mx-auto">
+                Y disfrutando de estos postres sin culpa.
+            </p>
+            
+            <!-- New Testimonials Section (without stars) - Images as testimonials -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mt-12">
+                <!-- Testimonio 1: WhatsApp 2 -->
+                <div class="bg-light rounded-2xl p-4 shadow-lg border border-gray-100 flex items-center justify-center">
+                    <img src="https://d1yei2z3i6k35z.cloudfront.net/13287534/686b513c02745_Testimonio2Wha.jpg"
+                         alt="Testimonio de WhatsApp" class="w-full h-auto rounded-lg object-contain">
+                </div>
+
+                <!-- Testimonio 2: WhatsApp 1 -->
+                <div class="bg-light rounded-2xl p-4 shadow-lg border border-gray-100 flex items-center justify-center">
+                    <img src="https://d1yei2z3i6k35z.cloudfront.net/13287534/686b5fc099b17_Testimonio3Wha.jpg"
+                         alt="Testimonio de WhatsApp" class="w-full h-auto rounded-lg object-contain">
+                </div>
+
+                <!-- Testimonio 3: TikTok -->
+                <div class="bg-light rounded-2xl p-4 shadow-lg border border-gray-100 flex items-center justify-center">
+                    <img src="https://d1yei2z3i6k35z.cloudfront.net/13287534/686b513c038fb_TestimonioTiktok.jpg"
+                         alt="Testimonio de TikTok" class="w-full h-auto rounded-lg object-contain">
+                </div>
+            </div>
+
+            <!-- Button for Testimonials Section -->
+            <div class="text-center mt-12">
+                <a href="https://pay.hotmart.com/A100518285S"
+                   class="bg-accent hover:bg-secondary text-white font-bold py-4 px-8 rounded-full text-lg md:text-xl shadow-lg transition-all duration-300 transform hover:scale-105 inline-block">
+                    QUIERO UNIRME Y DISFRUTAR DE POSTRES SIN CULPA
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="py-16 md:py-24 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">
+                Tu Satisfacción Está 100% Garantizada
+            </h2>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-12">
+                
+            </p>
+
+            <!-- Updated Guarantee Section to match image_9dd0a2.png -->
+            <div class="bg-white rounded-2xl p-8 md:p-12 max-w-3xl mx-auto shadow-lg border border-gray-100 flex flex-col md:flex-row items-center text-primary">
+                <div class="md:w-1/3 flex justify-center mb-6 md:mb-0 md:pr-8">
+                    <img src="https://d1yei2z3i6k35z.cloudfront.net/13287534/6861fb6f2b012_image-removebg-preview11.png"
+                         alt="Escudo de Garantía de 7 Días"
+                         class="h-48 w-48 object-contain">
+                </div>
+                <div class="md:w-2/3 md:text-left">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4">Garantía de Satisfacción de 7 Días</h3>
+                    <p class="text-lg mb-8">
+                        Estamos tan seguros de que amarás Postres Saludables Sin Horno que te ofrecemos una garantía de 7 días. Si por cualquier razón no cumple tus expectativas, simplemente contáctanos y te devolveremos el 100% de tu dinero.
+                        <span class="font-semibold">¡Sin preguntas, sin complicaciones!</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Section: No tienes nada que perder y ¡todo que ganar! from image_9f8c3a.png -->
+    <section class="py-16 md:py-24 bg-white text-center">
+        <div class="container mx-auto px-4">
+            <p class="text-2xl md:text-3xl font-bold text-primary mb-8">
+                No tienes nada que perder y <span class="text-accent">¡todo que ganar!</span>
+            </p>
+            <a href="https://pay.hotmart.com/A100518285S"
+               class="bg-accent hover:bg-secondary text-white font-bold py-4 px-8 rounded-full text-xl md:text-2xl shadow-lg transition-all duration-300 transform hover:scale-105 inline-block">
+                QUIERO MIS POSTRES SALUDABLES AHORA
+            </a>
+        </div>
+    </section>
+    
+    <!-- New Testimonials Section with stars (moved from previous location) -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-6">
+                Más vidas transformadas con el ebook postres saludables sin horno
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Testimonial 1: Sofía P. -->
+                <div class="bg-light rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <img src="https://d1yei2z3i6k35z.cloudfront.net/13287534/6861f90b210bf_Sof%C3%ADa.png"
+                             alt="Sofía P." class="w-16 h-16 rounded-full mr-4 object-cover">
+                        <div>
+                            <p class="font-bold text-primary">Sofía P.</p>
+                            <div class="star-rating">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-lg italic text-gray-700">
+                        "¡Increíble! Pensé que comer postres saludables era aburrido, pero estas recetas son deliciosas y súper fáciles. ¡Adiós a la culpa!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 2: Carlos M. -->
+                <div class="bg-light rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <img src="https://d1yei2z3i6k35z.cloudfront.net/13287534/6861f9d1c0249_carlos.png"
+                             alt="Carlos M." class="w-16 h-16 rounded-full mr-4 object-cover">
+                        <div>
+                            <p class="font-bold text-primary">Carlos M.</p>
+                            <div class="star-rating">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-lg italic text-gray-700">
+                        "Soy principiante en la cocina y logré hacer postres que encantaron a toda mi familia. ¡Gracias por simplificar la vida dulce!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 3: Marta R. -->
+                <div class="bg-light rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <img src="https://d1yei2z3i6k35z.cloudfront.net/13287534/6861f9d1c158e_marta.png"
+                             alt="Marta R." class="w-16 h-16 rounded-full mr-4 object-cover">
+                        <div>
+                            <p class="font-bold text-primary">Marta R.</p>
+                            <div class="star-rating">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-lg italic text-gray-700">
+                        "Perfectas para los antojos de la tarde. ¡Y se ven tan lindas que parecen de cafetería!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 4: Alfonso C. -->
+                <div class="bg-light rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <img src="https://d1yei2z3i6k35z.cloudfront.net/13287534/6861f9d1aecbb_Alfonso.png"
+                             alt="Alfonso C." class="w-16 h-16 rounded-full mr-4 object-cover">
+                        <div>
+                            <p class="font-bold text-primary">Alfonso C.</p>
+                            <div class="star-rating">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-lg italic text-gray-700">
+                        "Rápidas, fáciles y sí, ¡riquísimas! No vuelvo a las galletas del súper."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call to Action Section - Moved here from image_9f34e6.png -->
+    <section class="bg-primary text-white py-16 md:py-24 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-primary/90 to-primary opacity-90"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <h2 class="text-3xl md:text-5xl font-bold leading-tight mb-6 max-w-4xl mx-auto">
+                ¡No Esperes Más para Disfrutar Postres <span class="text-accent">Dulces y Saludables!</span>
+            </h2>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                No necesitas renunciar a lo dulce. Solo necesitas el paso a paso correcto, y aquí lo tienes.
+            </p>
+
+            <div class="bg-accent text-primary font-bold py-1 px-4 rounded-full inline-block mb-4 text-sm md:text-base">
+                Oferta Especial por Tiempo Limitado:
+            </div>
+            <p class="text-4xl md:text-5xl font-bold mb-2">$7 USD</p>
+            <p class="text-lg mb-8">(Precio regular: $32 USD)</p>
+
+            <a href="https://pay.hotmart.com/A100518285S"
+               class="bg-accent hover:bg-secondary text-white font-bold py-4 px-8 rounded-full text-xl md:text-2xl shadow-lg transition-all duration-300 transform hover:scale-105 inline-block pulse-animation">
+                QUIERO MIS POSTRES SALUDABLES AHORA
+            </a>
+
+            <div class="mt-6 flex flex-col items-center justify-center">
+                <img src="https://d1yei2z3i6k35z.cloudfront.net/13287534/6861fe451744a_mediosdepagopeque%C3%B1o.png"
+                     alt="Métodos de pago aceptados"
+                     class="h-12 md:h-16 mb-2">
+                <p class="text-sm md:text-base text-white/80">Recuerda, tu compra está protegida por nuestra garantía de 7 días.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-12">
+                Preguntas Frecuentes
+            </h2>
+
+            <div class="max-w-3xl mx-auto space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="bg-light rounded-2xl p-6 shadow-lg border border-gray-100">
+                    <h3 class="text-xl font-bold mb-3">¿Necesito tener experiencia en la cocina?</h3>
+                    <p class="text-gray-700">
+                        ¡Absolutamente no! Las recetas están diseñadas para ser fáciles de seguir, incluso si eres principiante. Cada paso está explicado de forma clara y sencilla.
+                    </p>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-light rounded-2xl p-6 shadow-lg border border-gray-100">
+                    <h3 class="text-xl font-bold mb-3">¿Qué tipo de ingredientes se utilizan?</h3>
+                    <p class="text-gray-700">
+                        Utilizamos ingredientes comunes y accesibles que puedes encontrar en cualquier supermercado. Además, incluimos una guía de sustituciones para que puedas adaptar las recetas a tus preferencias o lo que tengas a mano.
+                    </p>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-light rounded-2xl p-6 shadow-lg border border-gray-100">
+                    <h3 class="text-xl font-bold mb-3">¿Cómo recibiré el ebook?</h3>
+                    <p class="text-gray-700">
+                        Una vez que completes tu compra, recibirás un correo electrónico con un enlace para descargar el ebook en formato PDF de manera instantánea. Podrás acceder a él desde cualquier dispositivo.
+                    </p>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-light rounded-2xl p-6 shadow-lg border border-gray-100">
+                    <h3 class="text-xl font-bold mb-3">¿La compra es segura?</h3>
+                    <p class="text-gray-700">
+                        Sí, la compra se realiza a través de Hotmart, una plataforma segura y confiable que protege tus datos y tu información de pago.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-8">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>&copy; 2024 Dulceconfit. Todos los derechos reservados.</p>
+            <p class="mt-2">
+                <a href="#" class="hover:underline mx-2">Términos de Servicio</a> |
+                <a href="#" class="hover:underline mx-2">Política de Privacidad</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
